@@ -1,0 +1,313 @@
+
+@media (max-width: 768px) {
+    .card {
+        width: 45%;
+        margin-bottom: 10px;
+    }
+    .container {
+        padding: 10px;
+    }
+    button {
+        font-size: 16px;
+        padding: 8px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .description, .humor {
+        font-size: 1.2em;
+        padding: 5px;
+    }
+    .reaction {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .container {
+        padding: 5px;
+    }
+    button {
+        font-size: 14px;
+        padding: 6px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    .description, .humor {
+        font-size: 1em;
+        padding: 5px;
+    }
+    .reaction {
+        width: 150px;
+    }
+}
+
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  
+
+
+body {
+    position: relative;
+    background-color: rgb(128, 9, 9);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  body::before,
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-size: 300px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  body::before {
+    left: 0;
+    background-image: url('https://i.pinimg.com/736x/e7/65/d4/e765d440217479b0f2e709471724e718.jpg'); 
+  }
+  
+  body::after {
+    right: 0;
+    background-image: url(''); 
+  }
+  
+button {
+    background-color: rgba(81, 14, 14, 0.801);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 3px solid rgb(95, 0, 0);
+    transition: all ease 0.5s;
+  }
+button:hover {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+  }
+
+  button:active {
+    background-color: rgb(68, 0, 5);
+    border: rgb(143, 104, 6);
+  }
+  
+
+.reaction-img {
+    max-width: 170px;
+    height: auto;
+    width: 170px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.link:hover {
+    color: gold;
+    cursor: pointer;
+    
+}
+.link :visited {
+    color: rgb(59, 16, 23);
+}
+
+.card {
+    position: relative;
+    background-color: rgba(44, 43, 43, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.card::before {
+    top: -20px;
+    left: -20px;
+    background-image: url('https://raw.githubusercontent.com/RaghadAlJeffrey/memo/refs/heads/main/rose_black-removebg-preview.png');
+    background-size: cover;
+}
+
+.card::after {
+    bottom: -20px;
+    right: -20px;
+    background-image: url('https://raw.githubusercontent.com/RaghadAlJeffrey/memo/refs/heads/main/skull-removebg-preview.png');
+    background-size: cover;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+h1 {
+    position: relative;
+    color: #ffffff;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20px;
+    background-color: rgba(44, 43, 43, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid rgba(116, 8, 8, 0.56);
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+h1::before, h1::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-image: url('https://raw.githubusercontent.com/RaghadAlJeffrey/memo/refs/heads/main/skull-removebg-preview.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1::before {
+    top: -20px;
+    left: -20px;
+}
+
+h1::after {
+    bottom: -20px;
+    right: -20px;
+}
+
+.description {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background-color: rgba(44, 43, 43, 0.7);
+    padding: 10px;
+    border: 3px solid rgba(116, 8, 8, 0.56);
+    border-radius: 10px;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+
+.reaction {
+    display: block;
+    width: 300px; 
+    height: auto;
+    margin: 10px auto; 
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    border: 3px solid rgba(116, 8, 8, 0.56);
+    padding: 10px;
+}
+
+.card {
+    background-color: rgba(44, 43, 43, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card p {
+    color: #fee0fe;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.cats-section {
+    background-color: rgba(70, 70, 70, 0.7);
+    background-image: url('https://raw.githubusercontent.com/RaghadAlJeffrey/memo/refs/heads/main/letterbg.jpg');
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid rgba(103, 0, 0, 0.56);
+    margin-top: 20px;
+}
+
+.cats-section h2 {
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    text-shadow:
+        -1px -1px 0 #ffffff,  
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+    margin-bottom: 10px;
+}
+
+.cats-section p {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    text-align: left;
+    font-size: larger;
+    text-shadow:
+        -1px -1px 0 #ffffff,  
+        1px -1px 0 #ffffff,
+        -1px 1px 0 #ffffff,
+        1px 1px 0 #ffffff;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
